@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unni si dici?</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unni si dici?</h1>
+        <form id="imageForm" action="/generate_image" method="POST">
+            <input type="text" id="inputString1" name="inputString1" placeholder="AG I, 1, 2a, 3-4">
+            <br>
+            <input type="text" id="inputString2" name="inputString2" placeholder="Capo d'Orlando, Messina">
+            <br>
+            <input type="text" id="inputString3" name="inputString3" placeholder="Carrapipi, Jaci Rijali">
+            <br>
+            <button type="submit">Cria a mmàggini</button>
+        </form>
+
+        <img id="generatedImage" src="">
+
+        <div id="formatSelection" style="display: none;">
+            <form id="pngForm" action="/download_png" method="POST">
+                <input type="hidden" name="imageUrl" id="imageUrlForPng">
+                <button type="submit">Scàrrica PNG</button>
+            </form>
+            <form id="svgForm" action="/download_svg" method="POST">
+                <input type="hidden" name="imageUrl" id="imageUrlForSvg">
+                <button type="submit">Scàrrica SVG</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Giancarlo A. Antonucci</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

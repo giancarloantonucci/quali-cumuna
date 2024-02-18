@@ -1,0 +1,3 @@
+[submodule "finaiti"]
+	path = finaiti
+	url = https://github.com/giancarloantonucci/finaiti
