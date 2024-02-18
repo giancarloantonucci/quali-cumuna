@@ -18,22 +18,27 @@ app.get('/', (req, res) => {
 });
 
 app.post('/generate_image', (req, res) => {
-    const inputString1 = req.body.inputString1;
-    const inputString2 = req.body.inputString2;
-    const inputString3 = req.body.inputString3;
+    try {
+        const inputString1 = req.body.inputString1;
+        const inputString2 = req.body.inputString2;
+        const inputString3 = req.body.inputString3;
 
-    const options = {
-        mode: 'text',
-        pythonPath: 'python3',
-        scriptPath: __dirname,
-        args: [inputString1, inputString2, inputString3]
-    };
+        const options = {
+            mode: 'text',
+            pythonPath: 'python3',
+            scriptPath: __dirname,
+            args: [inputString1, inputString2, inputString3]
+        };
 
-    PythonShell.run('generate_image.py', options)
-    .then(result => {
-        const imagePath = result[0].trim();
-        res.json({ imageUrl: imagePath });
-    })
+        PythonShell.run('generate_image.py', options)
+        .then(result => {
+            const imagePath = result[0].trim();
+            res.json({ imageUrl: imagePath });
+        })
+    } catch (error) {
+        console.error('Error generating image:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
 });
 
 app.post('/download_png', (req, res) => {
