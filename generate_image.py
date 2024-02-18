@@ -56,8 +56,8 @@ input_string1 = argv[1]
 input_string2 = argv[2]
 input_string3 = argv[3]
 
-riggiuni = read_file("./basa/riggiuni/riggiuni.shp")
-cumuna = read_file("./basa/cumuna/cumuna.shp")
+riggiuni = read_file("./finaiti/riggiuni/riggiuni.shp")
+cumuna = read_file("./finaiti/cumuna/cumuna.shp")
 
 crs_epsg = ccrs.epsg("3857")
 riggiuni_epsg = riggiuni.to_crs(epsg="3857")
