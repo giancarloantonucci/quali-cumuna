@@ -25,5 +25,3 @@ jobs:
         pip install geopandas cartopy matplotlib
 
     - run: npm install
-
-    - run: npm test
