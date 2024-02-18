@@ -1,0 +1,1 @@
+Git does not track an empty directory. Hence this file.
