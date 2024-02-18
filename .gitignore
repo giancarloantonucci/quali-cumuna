@@ -1,3 +1,4 @@
 .DS_Store
 test.ipynb
-public/images/mmaggini.*
+public/images/*.png
+public/images/*.svg

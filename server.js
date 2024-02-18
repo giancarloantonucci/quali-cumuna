@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { PythonShell } = require('python-shell');
 const path = require('path');
+// const NodeCache = require('node-cache');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -29,9 +30,14 @@ app.post('/generate_image', (req, res) => {
             args: [inputString1, inputString2, inputString3]
         };
 
-        PythonShell.run('generate_image.py', options).then(result => {
+        PythonShell.run('generate_image.py', options)
+        .then(result => {
             const imagePath = result[0].trim();
             res.json({ imageUrl: imagePath });
+        })
+        .catch(error => {
+            console.error('Error running Python script:', error);
+            res.status(500).json({ error: 'Internal server error' });
         });
     } catch (error) {
         console.error('Error generating image:', error);

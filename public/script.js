@@ -1,9 +1,7 @@
 document.getElementById('imageForm').addEventListener('submit', function (event) {
     event.preventDefault();
-
-    const inputString1 = document.querySelector('input[name="inputString1"]').value;
-    const inputString2 = document.querySelector('input[name="inputString2"]').value;
-    const inputString3 = document.querySelector('input[name="inputString3"]').value;
+    
+    const inputStrings = Array.from(document.querySelectorAll('#imageForm input')).map(input => input.value);
 
     fetch('/generate_image', {
         method: 'POST',
@@ -11,17 +9,21 @@ document.getElementById('imageForm').addEventListener('submit', function (event)
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            inputString1: inputString1,
-            inputString2: inputString2,
-            inputString3: inputString3
+            inputString1: inputStrings[0],
+            inputString2: inputStrings[1],
+            inputString3: inputStrings[2]
         }),
     })
     .then(response => response.json())
     .then(data => {
-        const imageUrl = data.imageUrl;
-        const uniqueUrl = imageUrl + '?timestamp=' + new Date().getTime();
-        document.getElementById('generatedImage').src = uniqueUrl;
-        document.getElementById('formatSelection').style = '';
+        if (data && data.imageUrl) {
+            const imageUrl = data.imageUrl;
+            const uniqueUrl = imageUrl + '?timestamp=' + new Date().getTime();
+            document.getElementById('generatedImage').src = uniqueUrl;
+            document.getElementById('formatSelection').style = '';
+        } else {
+            console.error('Unexpected response format:', data);
+        }
     })
     .catch(error => console.error('Error:', error));
 });
