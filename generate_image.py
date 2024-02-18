@@ -123,6 +123,19 @@ axins.add_geometries(
     linewidth=0.5,
 )
 
-savefig("./public/images/mmaggini.png", bbox_inches="tight")
-savefig("./public/images/mmaggini.svg", bbox_inches="tight")
-print("images/mmaggini.png")
+from hashlib import md5
+
+def generate_images(input_string1, input_string2, input_string3):
+    # Generate filenames with unique identifier based on input parameters
+    unique_id = md5((input_string1 + input_string2 + input_string3).encode()).hexdigest()
+    png_filename = f"./public/images/mmaggini_{unique_id}.png"
+    svg_filename = f"./public/images/mmaggini_{unique_id}.svg"
+    js_response = f"images/mmaggini_{unique_id}.png"
+    return png_filename, svg_filename, js_response
+
+png_path, svg_path, js_response = generate_images(input_string1, input_string2, input_string3)
+
+savefig(png_path, bbox_inches="tight")
+savefig(svg_path, bbox_inches="tight")
+
+print(js_response)
