@@ -8,25 +8,26 @@ from matplotlib.pyplot import subplots, savefig
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from hashlib import md5
 
-
 # Parse input strings into manageable chunks
 def parse_input_string(input_string):
-    result = []
     pattern = (
-        r"\b(?:AG|CL|CT|EN|ME|PA|RG|SR|TP)(?:(?:\s*,)?\s*[AIV0-9]+[a-z]*(?:-\d+)?)+\b"
+        r"\b(?:AG|CL|CT|EN|ME|PA|RG|SR|TP)(?:(?:\s*,)?\s*[AIV0-9]+[a-z]*(?:-\d+)?)*\b"
     )
     tokens = findall(pattern, input_string)
+    result = []
     for token in tokens:
         header = token[:2]
         indices = [s.strip() for s in token[2:].split(",")]
-        for idx in indices:
-            if "-" in idx:
-                start, end = map(int, idx.split("-"))
-                result.extend(f"{header} {n}" for n in range(start, end + 1))
-            else:
-                result.append(f"{header} {idx}")
+        if indices[0]:
+            for idx in indices:
+                if "-" in idx:
+                    start, end = map(int, idx.split("-"))
+                    result.extend(f"{header} {n}" for n in range(start, end + 1))
+                else:
+                    result.append(f"{header} {idx}")
+        else:
+            result.append(f"{header}")
     return result
-
 
 # Extract names from nested dictionaries
 def extract_names_recursive(key, dictionary):
@@ -42,10 +43,8 @@ def extract_names_recursive(key, dictionary):
                     for result in extract_names_recursive(key, d):
                         yield result
 
-
 def get_names(dictionary):
     return list(extract_names_recursive("name", dictionary))
-
 
 # Find all names associated with a given code
 def lookup(code, all_codes):
@@ -77,7 +76,6 @@ def lookup(code, all_codes):
                             ):
                                 return [cumuni["name"]]
     return []
-
 
 # Load data files
 riggiuni = read_file("./finaiti/riggiuni/riggiuni.shp")
@@ -154,19 +152,19 @@ axins.add_geometries(
     linewidth=0.5,
 )
 
-
 # Generate filenames with unique identifier based on input parameters
 def generate_images(input_string1, input_string2, input_string3):
     unique_id = md5(
         (input_string1 + input_string2 + input_string3).encode()
     ).hexdigest()
-    png_filename = f"./public/images/mmaggini_{unique_id}.png"
-    svg_filename = f"./public/images/mmaggini_{unique_id}.svg"
-    js_response = f"images/mmaggini_{unique_id}.png"
-    return png_filename, svg_filename, js_response
+    base_path = f"images/{unique_id}"
+    png_path = f"./public/images/{unique_id}.png"
+    svg_path = f"./public/images/{unique_id}.svg"
+
+    return base_path, png_path, svg_path
 
 
-png_path, svg_path, js_response = generate_images(
+base_path, png_path, svg_path = generate_images(
     input_string1, input_string2, input_string3
 )
 
@@ -174,4 +172,4 @@ png_path, svg_path, js_response = generate_images(
 savefig(png_path, bbox_inches="tight")
 savefig(svg_path, bbox_inches="tight")
 
-print(js_response)
+print(base_path)

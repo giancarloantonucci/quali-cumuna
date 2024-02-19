@@ -125,13 +125,7 @@
                             {
                                 "code": "AG 22a",
                                 "name": "Giardina Gallotti",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Agrigento",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
                             }
                         ]
                     },
@@ -243,18 +237,17 @@
                     },
                     {
                         "code": "AG 42",
-                        "name": "Lampedusa",
+                        "name": "Lampedusa e Linosa",
                         "data": [
+                            {
+                                "code": "AG 42",
+                                "name": "Lampedusa",
+                                "data": {}
+                            },
                             {
                                 "code": "AG 42a",
                                 "name": "Linosa",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Lampedusa e Linosa",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
                             }
                         ]
                     }
@@ -302,24 +295,12 @@
                             {
                                 "code": "CL 6a",
                                 "name": "Favarella",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Caltanissetta",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
                             },
                             {
                                 "code": "CL 6b",
                                 "name": "Prestianni",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Caltanissetta",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
                             }
                         ]
                     },
@@ -336,7 +317,7 @@
                 "data": [
                     {
                         "code": "CL 8",
-                        "name": "Mussumeli",
+                        "name": "Mussomeli",
                         "data": {}
                     },
                     {
@@ -439,13 +420,7 @@
                             {
                                 "code": "CT 2a",
                                 "name": "Presa",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Piedimonte Etneo",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
                             }
                         ]
                     },
@@ -461,13 +436,12 @@
                             {
                                 "code": "CT 4a",
                                 "name": "Passopisciaro",
-                                "data": [
-                                    {
-                                        "code": "404",
-                                        "name": "Castiglione di Sicilia",
-                                        "data": {}
-                                    }
-                                ]
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 4b",
+                                "name": "Solicchiata",
+                                "data": {}
                             }
                         ]
                     },
@@ -504,147 +478,235 @@
                 "data": [
                     {
                         "code": "CT 10",
-                        "name": "",
+                        "name": "Fiumefreddo",
                         "data": {}
                     },
                     {
                         "code": "CT 11",
-                        "name": "",
-                        "data": {}
+                        "name": "Mascali",
+                        "data": [
+                            {
+                                "code": "CT 11a",
+                                "name": "Santa Venera",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 11b",
+                                "name": "Puntalazzo",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 12",
-                        "name": "",
+                        "name": "Sant'Alfio",
                         "data": {}
                     },
                     {
                         "code": "CT 13",
-                        "name": "",
-                        "data": {}
+                        "name": "Riposto",
+                        "data": [
+                            {
+                                "code": "CT 13a",
+                                "name": "Carruba",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 13b",
+                                "name": "Torre Archirafi",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 14",
-                        "name": "",
-                        "data": {}
+                        "name": "Giarre",
+                        "data": [
+                            {
+                                "code": "CT 14a",
+                                "name": "Macchia",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 14b",
+                                "name": "San Giovanni Montebello",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 15",
-                        "name": "",
+                        "name": "Milo",
                         "data": {}
                     },
                     {
                         "code": "CT 16",
-                        "name": "",
-                        "data": {}
+                        "name": "Zafferana Etnea",
+                        "data": [
+                            {
+                                "code": "CT 16a",
+                                "name": "Fleri",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 17",
-                        "name": "",
-                        "data": {}
+                        "name": "Santa Venerina",
+                        "data": [
+                            {
+                                "code": "CT 17a",
+                                "name": "Dagala del Re",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 18",
-                        "name": "",
-                        "data": {}
+                        "name": "Acireale",
+                        "data": [
+                            {
+                                "code": "CT 18a",
+                                "name": "Mangano",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 18b",
+                                "name": "Stazzo",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 18c",
+                                "name": "Piano d'Api",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 18d",
+                                "name": "Santa Maria la Scala",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT 18e",
+                                "name": "Capo Mulini",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 19",
-                        "name": "",
+                        "name": "Acicatena",
                         "data": {}
                     },
                     {
                         "code": "CT 20",
-                        "name": "",
+                        "name": "Aci Sant'Antonio",
                         "data": {}
                     },
                     {
                         "code": "CT 21",
-                        "name": "",
+                        "name": "Aci Bonaccorsi",
                         "data": {}
                     },
                     {
                         "code": "CT 22",
-                        "name": "",
+                        "name": "Viagrande",
                         "data": {}
                     },
                     {
                         "code": "CT 23",
-                        "name": "",
+                        "name": "Trecastagni",
                         "data": {}
                     },
                     {
                         "code": "CT 24",
-                        "name": "",
+                        "name": "Pedara",
                         "data": {}
                     },
                     {
                         "code": "CT 25",
-                        "name": "",
+                        "name": "Nicolosi",
                         "data": {}
                     },
                     {
                         "code": "CT 26",
-                        "name": "",
-                        "data": {}
+                        "name": "Aci Castello",
+                        "data": [
+                            {
+                                "code": "CT 26a",
+                                "name": "Aci Trezza",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 27",
-                        "name": "",
+                        "name": "Valverde",
                         "data": {}
                     },
                     {
                         "code": "CT 28",
-                        "name": "",
+                        "name": "San Gregorio di Catania",
                         "data": {}
                     },
                     {
                         "code": "CT 29",
-                        "name": "",
+                        "name": "San Giovanni la Punta",
                         "data": {}
                     },
                     {
                         "code": "CT 30",
-                        "name": "",
+                        "name": "Sant'Agata li Battiati",
                         "data": {}
                     },
                     {
                         "code": "CT 31",
-                        "name": "",
+                        "name": "Tremestieri Etneo",
                         "data": {}
                     },
                     {
                         "code": "CT 32",
-                        "name": "",
+                        "name": "Gravina di Catania",
                         "data": {}
                     },
                     {
                         "code": "CT 33",
-                        "name": "",
+                        "name": "Mascalucia",
                         "data": {}
                     },
                     {
                         "code": "CT 34",
-                        "name": "",
+                        "name": "San Pietro Clarenza",
                         "data": {}
                     },
                     {
                         "code": "CT 35",
-                        "name": "",
+                        "name": "Camporotondo Etneo",
                         "data": {}
                     },
                     {
                         "code": "CT 36",
-                        "name": "",
+                        "name": "Belpasso",
                         "data": {}
                     },
                     {
                         "code": "CT 37",
-                        "name": "",
+                        "name": "Santa Maria di Licodia",
                         "data": {}
                     },
                     {
                         "code": "CT 38",
-                        "name": "",
+                        "name": "Paternò",
+                        "data": [
+                            {
+                                "code": "CT 38b",
+                                "name": "Sferro",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "CT 38a",
+                        "name": "Ragalna",
                         "data": {}
                     },
                     {
@@ -668,14 +730,93 @@
                 "code": "CT III",
                 "name": "dialetti catanesi occidentali",
                 "data": [
-
+                    {
+                        "code": "CT 42",
+                        "name": "Castel di Iudica",
+                        "data": [
+                            {
+                                "code": "CT 42a",
+                                "name": "Giumarra",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "CT 43",
+                        "name": "Raddusa",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 44",
+                        "name": "Ramacca",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 45",
+                        "name": "Mirabella Imbaccari",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 46",
+                        "name": "San Cono",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 47",
+                        "name": "San Michele di Ganzaria",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 48",
+                        "name": "Caltagirone",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 48A",
+                        "name": "Mazzarrone",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "CT IV",
                 "name": "dialetti catanesi meridionali",
                 "data": [
-
+                    {
+                        "code": "CT 49",
+                        "name": "Palagonia",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 50",
+                        "name": "Scordia",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 51",
+                        "name": "Militello in Val di Catania",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 52",
+                        "name": "Mineo",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 53",
+                        "name": "Grammichele",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 54",
+                        "name": "Vizzini",
+                        "data": {}
+                    },
+                    {
+                        "code": "CT 55",
+                        "name": "Licodia Eubea",
+                        "data": {}
+                    }
                 ]
             }
         ]
@@ -688,14 +829,136 @@
                 "code": "EN I",
                 "name": "dialetti ennesi settentrionali",
                 "data": [
-
+                    {
+                        "code": "EN 1",
+                        "name": "Cerami",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 2",
+                        "name": "Troina",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 3",
+                        "name": "Sperlinga",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 4",
+                        "name": "Nicosia",
+                        "data": [
+                            {
+                                "code": "EN 4a",
+                                "name": "Villadoro",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "EN 5",
+                        "name": "Gagliano Castelferrato",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 6",
+                        "name": "Centuripe",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 7",
+                        "name": "Catenanuova",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 8",
+                        "name": "Regalbuto",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 9",
+                        "name": "Agira",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 10",
+                        "name": "Nissoria",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 11",
+                        "name": "Assoro",
+                        "data": [
+                            {
+                                "code": "EN 11a",
+                                "name": "San Giorgio",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "EN 12",
+                        "name": "Leonforte",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "EN II",
                 "name": "dialetti ennesi meridionali",
                 "data": [
-
+                    {
+                        "code": "EN 13",
+                        "name": "Villarosa",
+                        "data": [
+                            {
+                                "code": "EN 13a",
+                                "name": "Villapriolo",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "EN 14",
+                        "name": "Calascibetta",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 15",
+                        "name": "Enna",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 16",
+                        "name": "Valguarnera Caropepe",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 17",
+                        "name": "Aidone",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 18",
+                        "name": "Piazza Armerina",
+                        "data": [
+                            {
+                                "code": "EN 18a",
+                                "name": "Grottacalda",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "EN 19",
+                        "name": "Barrafranca",
+                        "data": {}
+                    },
+                    {
+                        "code": "EN 20",
+                        "name": "Pietraperzia",
+                        "data": {}
+                    }
                 ]
             }
         ]
@@ -708,28 +971,744 @@
                 "code": "ME I",
                 "name": "dialetti messinesi orientali: versante ionico",
                 "data": [
-
+                    {
+                        "code": "ME 1",
+                        "name": "Messina",
+                        "data": [
+                            {
+                                "code": "ME 1a",
+                                "name": "Spartà",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1b",
+                                "name": "Massa San Giorgio",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1c",
+                                "name": "Massa San Nicola",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1d",
+                                "name": "Faro Superiore",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1e",
+                                "name": "Ganzirri",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1f",
+                                "name": "Paradiso",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1g",
+                                "name": "Castanea delle Furie",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1h",
+                                "name": "Salice",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1i",
+                                "name": "Gesso",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1l",
+                                "name": "Santissima Annunziata",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1m",
+                                "name": "Massa Santa Lucia",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1n",
+                                "name": "Larderia",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1o",
+                                "name": "Tremestieri",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1p",
+                                "name": "Mili San Pietro",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1q",
+                                "name": "Mili Marina",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1r",
+                                "name": "Galati Superiore, Galati Inferiore",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1s",
+                                "name": "Galati Marina",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1t",
+                                "name": "Santo Stefano di Briga",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1v",
+                                "name": "Molino",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 1z",
+                                "name": "Briga Marina",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 2",
+                        "name": "Scaletta Zanclea",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 3",
+                        "name": "Itala",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 4",
+                        "name": "Alì",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 5",
+                        "name": "Alì Terme",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 6",
+                        "name": "Fiumedinisi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 7",
+                        "name": "Mandanici",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 8",
+                        "name": "Pagliara",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 9",
+                        "name": "Nizza di Sicilia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 10",
+                        "name": "Roccalumera",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 11",
+                        "name": "Furci Siculo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 12",
+                        "name": "Antillo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 13",
+                        "name": "Casalvecchio Siculo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 14",
+                        "name": "Savoca",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 15",
+                        "name": "Santa Teresa di Riva",
+                        "data": [
+                            {
+                                "code": "ME 15a",
+                                "name": "Misserio",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 16",
+                        "name": "Limina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 17",
+                        "name": "Roccafiorita",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 18",
+                        "name": "Sant'Alessio Siculo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 19",
+                        "name": "Forza d'Agrò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 20",
+                        "name": "Mongiuffi Melia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 21",
+                        "name": "Gallodoro",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 22",
+                        "name": "Letojanni",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 23",
+                        "name": "Taormina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 24",
+                        "name": "Giardini-Naxos",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 25",
+                        "name": "Castelmola",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 26",
+                        "name": "Gaggi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 27",
+                        "name": "Graniti",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 28",
+                        "name": "Motta Camastra",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 29",
+                        "name": "Francavilla di Sicilia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 30",
+                        "name": "Moio Alcantara",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 31",
+                        "name": "Malvagna",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 32",
+                        "name": "Roccella Valdemone",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 33",
+                        "name": "Santa Domenica Vittoria",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "ME II",
                 "name": "dialetti messinesi orientali: versante tirrenico",
                 "data": [
-
+                    {
+                        "code": "ME 34",
+                        "name": "Lipari",
+                        "data": [
+                            {
+                                "code": "ME 34a",
+                                "name": "Stromboli",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 34b",
+                                "name": "Panarea",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 34c",
+                                "name": "Vulcano",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 34d",
+                                "name": "Filicudi",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 34e",
+                                "name": "Alicudi",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 35",
+                        "name": "Malfa",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 36",
+                        "name": "Santa Marina Salina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 37",
+                        "name": "Leni",
+                        "data": [
+                            {
+                                "code": "ME 37a",
+                                "name": "Rinella",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 38",
+                        "name": "Villafranca Tirrena",
+                        "data": [
+                            {
+                                "code": "ME 38a",
+                                "name": "Serro",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 38A",
+                        "name": "Saponara",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 39",
+                        "name": "Spadafora",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 40",
+                        "name": "Venetico",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 41",
+                        "name": "Valdina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 42",
+                        "name": "Roccavaldina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 43",
+                        "name": "Rometta",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 44",
+                        "name": "Monforte San Giorgio",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 45",
+                        "name": "Torregrotta",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 46",
+                        "name": "San Pier Niceto",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 47",
+                        "name": "Condrò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 48",
+                        "name": "Pace del Mela",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 49",
+                        "name": "Gualtieri Sicaminò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 50",
+                        "name": "Santa Lucia del Mela",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 51",
+                        "name": "San Filippo del Mela",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 52",
+                        "name": "Milazzo",
+                        "data": [
+                            {
+                                "code": "ME 52a",
+                                "name": "Spadafora San Pietro",
+                                "data": {}
+                            },
+                            {
+                                "code": "ME 52b",
+                                "name": "San Marco di Milazzo",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 53",
+                        "name": "Merì",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 54",
+                        "name": "Barcellona Pozzo di Gotto",
+                        "data": [
+                            {
+                                "code": "ME 54a",
+                                "name": "Gala",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 55",
+                        "name": "Rodì Milici",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 56",
+                        "name": "Castroreale",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 56A",
+                        "name": "Terme Vigliatore",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "ME III",
                 "name": "dialetti messinesi centrali",
                 "data": [
-
+                    {
+                        "code": "ME 57",
+                        "name": "Fondachelli-Fantina",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 58",
+                        "name": "Novara di Sicilia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 59",
+                        "name": "Furnari",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 60",
+                        "name": "Mazzarrà Sant'Andrea",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 61",
+                        "name": "Tripi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 62",
+                        "name": "Falcone",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 63",
+                        "name": "Oliveri",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 64",
+                        "name": "Basicò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 65",
+                        "name": "Montalbano Elicona",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 66",
+                        "name": "Patti",
+                        "data": [
+                            {
+                                "code": "ME 66a",
+                                "name": "Tindari",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 67",
+                        "name": "Librizzi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 68",
+                        "name": "San Piero Patti",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 69",
+                        "name": "Montagnareale",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 70",
+                        "name": "Gioiosa Marea",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 71",
+                        "name": "Piraino",
+                        "data": [
+                            {
+                                "code": "ME 71a",
+                                "name": "Gliaca",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ME 72",
+                        "name": "Sant'Angelo di Brolo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 73",
+                        "name": "Raccuja",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 74",
+                        "name": "Brolo",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 75",
+                        "name": "Ficarra",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 76",
+                        "name": "Sinagra",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 77",
+                        "name": "Ucria",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 78",
+                        "name": "Floresta",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 79",
+                        "name": "Tortorici",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 80",
+                        "name": "Castell'Umberto",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 81",
+                        "name": "Naso",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 82",
+                        "name": "Capo d'Orlando",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 83",
+                        "name": "Capri Leone",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 84",
+                        "name": "Mirto",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 85",
+                        "name": "Frazzanò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 86",
+                        "name": "San Salvatore di Fitalia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 87",
+                        "name": "Galati Mamertino",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 88",
+                        "name": "Longi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 89",
+                        "name": "San Marco d'Alunzio",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 89A",
+                        "name": "Torrenova",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 90",
+                        "name": "Militello Rosmarino",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 91",
+                        "name": "Alcara li Fusi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 92",
+                        "name": "Sant'Agata di Militello",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 92A",
+                        "name": "Acquedolci",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "ME IV",
                 "name": "dialetti messinesi occidentali",
                 "data": [
-
+                    {
+                        "code": "ME 93",
+                        "name": "Cesarò",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 94",
+                        "name": "San Teodoro",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 95",
+                        "name": "San Fratello",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 96",
+                        "name": "Capizzi",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 97",
+                        "name": "Caronia",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 98",
+                        "name": "Santo Stefano di Camastra",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 99",
+                        "name": "Reitano",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 100",
+                        "name": "Mistretta",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 101",
+                        "name": "Castel di Lucio",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 102",
+                        "name": "",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 103",
+                        "name": "",
+                        "data": {}
+                    },
+                    {
+                        "code": "ME 104",
+                        "name": "",
+                        "data": [
+                            {
+                                "code": "ME 104a",
+                                "name": "",
+                                "data": {}
+                            }
+                        ]
+                    }
                 ]
             }
         ]
@@ -742,28 +1721,44 @@
                 "code": "PA I",
                 "name": "dialetti palermitani orientali (delle Madonie)",
                 "data": [
-
+                    {
+                        "code": "PA 1",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "PA II",
                 "name": "dialetti palermitani centrali",
                 "data": [
-
+                    {
+                        "code": "PA 25",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "PA III",
                 "name": "dialetti palermitani dell'interno",
                 "data": [
-
+                    {
+                        "code": "PA 53",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "PA IV",
                 "name": "dialetti palermitani occidentali",
                 "data": [
-
+                    {
+                        "code": "PA 67",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             }
         ]
@@ -772,7 +1767,11 @@
         "code": "RG",
         "name": "dialetti ragusani",
         "data": [
-
+            {
+                "code": "RG 1",
+                "name": "",
+                "data": {}
+            }
         ]
     },
     {
@@ -783,14 +1782,22 @@
                 "code": "SR I",
                 "name": "dialetti siracusani settentrionali",
                 "data": [
-
+                    {
+                        "code": "SR 1",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             },
             {
                 "code": "SR II",
                 "name": "dialetti siracusani meridionali",
                 "data": [
-
+                    {
+                        "code": "SR 13",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             }
         ]
@@ -803,14 +1810,38 @@
                 "code": "TP I",
                 "name": "dialetti trapanesi orientali",
                 "data": [
-
+                    {
+                        "code": "TP 1",
+                        "name": "",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 15",
+                        "name": "Trapani, Misiliscemi",
+                        "data": [
+                            {
+                                "code": "TP 15",
+                                "name": "Trapani",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP ?",
+                                "name": "Misiliscemi",
+                                "data": {}
+                            }
+                        ]
+                    }
                 ]
             },
             {
                 "code": "TP II",
                 "name": "dialetti trapanesi occidentali",
                 "data": [
-
+                    {
+                        "code": "TP 13",
+                        "name": "",
+                        "data": {}
+                    }
                 ]
             }
         ]

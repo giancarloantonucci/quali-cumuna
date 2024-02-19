@@ -11,6 +11,9 @@ const cache = new NodeCache({ stdTTL: 600 });
 const publicDirectoryPath = path.join(__dirname, 'public');
 const imageDirectoryPath = path.join(publicDirectoryPath, 'images');
 
+let pngImagePath;
+let svgImagePath;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
@@ -40,7 +43,12 @@ app.post('/generate_image', (req, res) => {
 
             PythonShell.run('generate_image.py', options)
             .then(result => {
-                const imagePath = result[0].trim();
+                const baseImagePath = result[0].trim();
+                const imagePath = baseImagePath + '.png';
+
+                pngImagePath = './public/' + baseImagePath + '.png';
+                svgImagePath = './public/' + baseImagePath + '.svg';
+                
                 cache.set(cacheKey, imagePath);
                 res.json({ imageUrl: imagePath });
             })
@@ -52,13 +60,11 @@ app.post('/generate_image', (req, res) => {
 });
 
 app.post('/download_png', (req, res) => {
-    const file = path.join(imageDirectoryPath, 'mmaggini.png');
-    res.download(file);
+    res.download(pngImagePath);
 });
 
 app.post('/download_svg', (req, res) => {
-    const file = path.join(imageDirectoryPath, 'mmaggini.svg');
-    res.download(file);
+    res.download(svgImagePath);
 });
 
 app.listen(PORT, () => {
