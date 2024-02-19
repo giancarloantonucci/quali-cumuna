@@ -1,133 +1,133 @@
 [
     {
-        "acronym": "AG",
+        "code": "AG",
         "name": "dialetti agrigentini",
         "data": [
             {
-                "acronym": "AG I",
+                "code": "AG I",
                 "name": "dialetti agrigentini orientali",
                 "data": [
                     {
-                        "acronym": "AG 1",
+                        "code": "AG 1",
                         "name": "Canicattì",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 2",
+                        "code": "AG 2",
                         "name": "Castrofilippo",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 3",
+                        "code": "AG 3",
                         "name": "Naro",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 4",
+                        "code": "AG 4",
                         "name": "Ravanusa",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 5",
+                        "code": "AG 5",
                         "name": "Campobello di Licata",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 6",
+                        "code": "AG 6",
                         "name": "Camastra",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 7",
+                        "code": "AG 7",
                         "name": "Palma di Montechiaro",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 8",
+                        "code": "AG 8",
                         "name": "Licata",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "AG II",
+                "code": "AG II",
                 "name": "dialetti agrigentini centrali",
                 "data": [
                     {
-                        "acronym": "AG 9",
+                        "code": "AG 9",
                         "name": "Cammarata",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 10",
+                        "code": "AG 10",
                         "name": "San Giovanni Gemini",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 11",
+                        "code": "AG 11",
                         "name": "Santo Stefano Quisquina",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 12",
+                        "code": "AG 12",
                         "name": "Bivona",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 13",
+                        "code": "AG 13",
                         "name": "Alessandria della Rocca",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 14",
+                        "code": "AG 14",
                         "name": "Cianciana",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 15",
+                        "code": "AG 15",
                         "name": "Casteltermini",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 16",
+                        "code": "AG 16",
                         "name": "San Biagio Platani",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 17",
+                        "code": "AG 17",
                         "name": "Sant'Angelo Muxaro",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 18",
+                        "code": "AG 18",
                         "name": "Racalmuto",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 19",
+                        "code": "AG 19",
                         "name": "Grotte",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 20",
+                        "code": "AG 20",
                         "name": "Comitini",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 21",
+                        "code": "AG 21",
                         "name": "Favara",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 22",
+                        "code": "AG 22",
                         "name": "Agrigento",
                         "data": [
                             {
-                                "acronym": "AG 22a",
+                                "code": "AG 22a",
                                 "name": "Giardina Gallotti",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Agrigento",
                                         "data": {}
                                     }
@@ -136,121 +136,121 @@
                         ]
                     },
                     {
-                        "acronym": "AG 23",
+                        "code": "AG 23",
                         "name": "Porto Empedocle",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 24",
+                        "code": "AG 24",
                         "name": "Aragona",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 24A",
+                        "code": "AG 24A",
                         "name": "Santa Elisabetta",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 25",
+                        "code": "AG 25",
                         "name": "Joppolo Giancaxio",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 26",
+                        "code": "AG 26",
                         "name": "Raffadali",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 27",
+                        "code": "AG 27",
                         "name": "Realmonte",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 28",
+                        "code": "AG 28",
                         "name": "Siculiana",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 29",
+                        "code": "AG 29",
                         "name": "Montallegro",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 30",
+                        "code": "AG 30",
                         "name": "Cattolica Eraclea",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "AG III",
+                "code": "AG III",
                 "name": "dialetti agrigentini occidentali",
                 "data": [
                     {
-                        "acronym": "AG 31",
+                        "code": "AG 31",
                         "name": "Burgio",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 32",
+                        "code": "AG 32",
                         "name": "Villafranca Sicula",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 33",
+                        "code": "AG 33",
                         "name": "Lucca Sicula",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 34",
+                        "code": "AG 34",
                         "name": "Calamonaci",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 35",
+                        "code": "AG 35",
                         "name": "Ribera",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 36",
+                        "code": "AG 36",
                         "name": "Caltabellotta",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 37",
+                        "code": "AG 37",
                         "name": "Sambuca di Sicilia",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 38",
+                        "code": "AG 38",
                         "name": "Sciacca",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 39",
+                        "code": "AG 39",
                         "name": "Santa Margherita di Belice",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 40",
+                        "code": "AG 40",
                         "name": "Montevago",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 41",
+                        "code": "AG 41",
                         "name": "Menfi",
                         "data": {}
                     },
                     {
-                        "acronym": "AG 42",
+                        "code": "AG 42",
                         "name": "Lampedusa",
                         "data": [
                             {
-                                "acronym": "AG 42a",
+                                "code": "AG 42a",
                                 "name": "Linosa",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Lampedusa e Linosa",
                                         "data": {}
                                     }
@@ -263,59 +263,59 @@
         ]
     },
     {
-        "acronym": "CL",
+        "code": "CL",
         "name": "dialetti nisseni",
         "data": [
             {
-                "acronym": "CL I",
+                "code": "CL I",
                 "name": "dialetti nisseni nordorientali",
                 "data": [
                     {
-                        "acronym": "CL 1",
+                        "code": "CL 1",
                         "name": "Resuttano",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 2",
+                        "code": "CL 2",
                         "name": "Vallelunga Pratameno",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 3",
+                        "code": "CL 3",
                         "name": "Villalba",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 4",
+                        "code": "CL 4",
                         "name": "Marianopoli",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 5",
+                        "code": "CL 5",
                         "name": "Santa Caterina Villarmosa",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 6",
+                        "code": "CL 6",
                         "name": "Caltanissetta",
                         "data": [
                             {
-                                "acronym": "CL 6a",
+                                "code": "CL 6a",
                                 "name": "Favarella",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Caltanissetta",
                                         "data": {}
                                     }
                                 ]
                             },
                             {
-                                "acronym": "CL 6b",
+                                "code": "CL 6b",
                                 "name": "Prestianni",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Caltanissetta",
                                         "data": {}
                                     }
@@ -324,94 +324,94 @@
                         ]
                     },
                     {
-                        "acronym": "CL 7",
+                        "code": "CL 7",
                         "name": "San Cataldo",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "CL II",
+                "code": "CL II",
                 "name": "dialetti nisseni sudoccidentali",
                 "data": [
                     {
-                        "acronym": "CL 8",
+                        "code": "CL 8",
                         "name": "Mussumeli",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 9",
+                        "code": "CL 9",
                         "name": "Acquaviva Platani",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 10",
+                        "code": "CL 10",
                         "name": "Sutera",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 11",
+                        "code": "CL 11",
                         "name": "Campofranco",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 12",
+                        "code": "CL 12",
                         "name": "Bompensiere",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 13",
+                        "code": "CL 13",
                         "name": "Milena",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 14",
+                        "code": "CL 14",
                         "name": "Montedoro",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 15",
+                        "code": "CL 15",
                         "name": "Serradifalco",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 16",
+                        "code": "CL 16",
                         "name": "Delia",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 17",
+                        "code": "CL 17",
                         "name": "Sommatino",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 18",
+                        "code": "CL 18",
                         "name": "Riesi",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "CL III",
+                "code": "CL III",
                 "name": "dialetti nisseni meridionali",
                 "data": [
                     {
-                        "acronym": "CL 19",
+                        "code": "CL 19",
                         "name": "Mazzarino",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 20",
+                        "code": "CL 20",
                         "name": "Butera",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 21",
+                        "code": "CL 21",
                         "name": "Niscemi",
                         "data": {}
                     },
                     {
-                        "acronym": "CL 22",
+                        "code": "CL 22",
                         "name": "Gela",
                         "data": {}
                     }
@@ -420,28 +420,28 @@
         ]
     },
     {
-        "acronym": "CT",
+        "code": "CT",
         "name": "dialetti catanesi",
         "data": [
             {
-                "acronym": "CT I",
+                "code": "CT I",
                 "name": "dialetti catanesi nordoccidentali",
                 "data": [
                     {
-                        "acronym": "CT 1",
+                        "code": "CT 1",
                         "name": "Calatabiano",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 2",
+                        "code": "CT 2",
                         "name": "Piedimonte Etneo",
                         "data": [
                             {
-                                "acronym": "CT 2a",
+                                "code": "CT 2a",
                                 "name": "Presa",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Piedimonte Etneo",
                                         "data": {}
                                     }
@@ -450,20 +450,20 @@
                         ]
                     },
                     {
-                        "acronym": "CT 3",
+                        "code": "CT 3",
                         "name": "Linguaglossa",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 4",
+                        "code": "CT 4",
                         "name": "Castiglione di Sicilia",
                         "data": [
                             {
-                                "acronym": "CT 4a",
+                                "code": "CT 4a",
                                 "name": "Passopisciaro",
                                 "data": [
                                     {
-                                        "acronym": "404",
+                                        "code": "404",
                                         "name": "Castiglione di Sicilia",
                                         "data": {}
                                     }
@@ -472,207 +472,207 @@
                         ]
                     },
                     {
-                        "acronym": "CT 5",
+                        "code": "CT 5",
                         "name": "Randazzo",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 6",
+                        "code": "CT 6",
                         "name": "Maletto",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 7",
+                        "code": "CT 7",
                         "name": "Bronte",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 8",
+                        "code": "CT 8",
                         "name": "Adrano",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 9",
+                        "code": "CT 9",
                         "name": "Biancavilla",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "CT II",
+                "code": "CT II",
                 "name": "dialetti catanesi sudorientali",
                 "data": [
                     {
-                        "acronym": "CT 10",
+                        "code": "CT 10",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 11",
+                        "code": "CT 11",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 12",
+                        "code": "CT 12",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 13",
+                        "code": "CT 13",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 14",
+                        "code": "CT 14",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 15",
+                        "code": "CT 15",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 16",
+                        "code": "CT 16",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 17",
+                        "code": "CT 17",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 18",
+                        "code": "CT 18",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 19",
+                        "code": "CT 19",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 20",
+                        "code": "CT 20",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 21",
+                        "code": "CT 21",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 22",
+                        "code": "CT 22",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 23",
+                        "code": "CT 23",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 24",
+                        "code": "CT 24",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 25",
+                        "code": "CT 25",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 26",
+                        "code": "CT 26",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 27",
+                        "code": "CT 27",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 28",
+                        "code": "CT 28",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 29",
+                        "code": "CT 29",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 30",
+                        "code": "CT 30",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 31",
+                        "code": "CT 31",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 32",
+                        "code": "CT 32",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 33",
+                        "code": "CT 33",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 34",
+                        "code": "CT 34",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 35",
+                        "code": "CT 35",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 36",
+                        "code": "CT 36",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 37",
+                        "code": "CT 37",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 38",
+                        "code": "CT 38",
                         "name": "",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 39",
+                        "code": "CT 39",
                         "name": "Motta Sant'Anastasia",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 40",
+                        "code": "CT 40",
                         "name": "Misterbianco",
                         "data": {}
                     },
                     {
-                        "acronym": "CT 41",
+                        "code": "CT 41",
                         "name": "Catania",
                         "data": {}
                     }
                 ]
             },
             {
-                "acronym": "CT III",
+                "code": "CT III",
                 "name": "dialetti catanesi occidentali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "CT IV",
+                "code": "CT IV",
                 "name": "dialetti catanesi meridionali",
                 "data": [
 
@@ -681,18 +681,18 @@
         ]
     },
     {
-        "acronym": "EN",
+        "code": "EN",
         "name": "dialetti ennesi",
         "data": [
             {
-                "acronym": "EN I",
+                "code": "EN I",
                 "name": "dialetti ennesi settentrionali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "EN II",
+                "code": "EN II",
                 "name": "dialetti ennesi meridionali",
                 "data": [
 
@@ -701,32 +701,32 @@
         ]
     },
     {
-        "acronym": "ME",
+        "code": "ME",
         "name": "dialetti messinesi",
         "data": [
             {
-                "acronym": "ME I",
+                "code": "ME I",
                 "name": "dialetti messinesi orientali: versante ionico",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "ME II",
+                "code": "ME II",
                 "name": "dialetti messinesi orientali: versante tirrenico",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "ME III",
+                "code": "ME III",
                 "name": "dialetti messinesi centrali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "ME IV",
+                "code": "ME IV",
                 "name": "dialetti messinesi occidentali",
                 "data": [
 
@@ -735,32 +735,32 @@
         ]
     },
     {
-        "acronym": "PA",
+        "code": "PA",
         "name": "dialetti palermitani",
         "data": [
             {
-                "acronym": "PA I",
+                "code": "PA I",
                 "name": "dialetti palermitani orientali (delle Madonie)",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "PA II",
+                "code": "PA II",
                 "name": "dialetti palermitani centrali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "PA III",
+                "code": "PA III",
                 "name": "dialetti palermitani dell'interno",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "PA IV",
+                "code": "PA IV",
                 "name": "dialetti palermitani occidentali",
                 "data": [
 
@@ -769,25 +769,25 @@
         ]
     },
     {
-        "acronym": "RG",
+        "code": "RG",
         "name": "dialetti ragusani",
         "data": [
 
         ]
     },
     {
-        "acronym": "SR",
+        "code": "SR",
         "name": "dialetti siracusani",
         "data": [
             {
-                "acronym": "SR I",
+                "code": "SR I",
                 "name": "dialetti siracusani settentrionali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "SR II",
+                "code": "SR II",
                 "name": "dialetti siracusani meridionali",
                 "data": [
 
@@ -796,18 +796,18 @@
         ]
     },
     {
-        "acronym": "TP",
+        "code": "TP",
         "name": "dialetti trapanesi",
         "data": [
             {
-                "acronym": "TP I",
+                "code": "TP I",
                 "name": "dialetti trapanesi orientali",
                 "data": [
 
                 ]
             },
             {
-                "acronym": "TP II",
+                "code": "TP II",
                 "name": "dialetti trapanesi occidentali",
                 "data": [
 
