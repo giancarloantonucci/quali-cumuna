@@ -457,8 +457,19 @@
                     },
                     {
                         "code": "CT 7",
-                        "name": "Bronte",
-                        "data": {}
+                        "name": "Bronte, Maniace",
+                        "data": [
+                            {
+                                "code": "CT 7",
+                                "name": "Bronte",
+                                "data": {}
+                            },
+                            {
+                                "code": "CT ?",
+                                "name": "Maniace",
+                                "data": {}
+                            }
+                        ]
                     },
                     {
                         "code": "CT 8",
@@ -478,7 +489,7 @@
                 "data": [
                     {
                         "code": "CT 10",
-                        "name": "Fiumefreddo",
+                        "name": "Fiumefreddo di Sicilia",
                         "data": {}
                     },
                     {
@@ -594,7 +605,7 @@
                     },
                     {
                         "code": "CT 19",
-                        "name": "Acicatena",
+                        "name": "Aci Catena",
                         "data": {}
                     },
                     {
@@ -1690,21 +1701,21 @@
                     },
                     {
                         "code": "ME 102",
-                        "name": "",
+                        "name": "Motta d'Affermo",
                         "data": {}
                     },
                     {
                         "code": "ME 103",
-                        "name": "",
+                        "name": "Pettineo",
                         "data": {}
                     },
                     {
                         "code": "ME 104",
-                        "name": "",
+                        "name": "Tusa",
                         "data": [
                             {
                                 "code": "ME 104a",
-                                "name": "",
+                                "name": "Castel di Tusa",
                                 "data": {}
                             }
                         ]
@@ -1723,7 +1734,144 @@
                 "data": [
                     {
                         "code": "PA 1",
-                        "name": "",
+                        "name": "Pollina",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 2",
+                        "name": "Castelbuono",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 3",
+                        "name": "San Mauro Castelverde",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 4",
+                        "name": "Geraci Siculo",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 5",
+                        "name": "Gangi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 6",
+                        "name": "Petralia Soprana",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 7",
+                        "name": "Petralia Sottana",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 8",
+                        "name": "Castellana Sicula",
+                        "data": [
+                            {
+                                "code": "PA 8a",
+                                "name": "Calcarelli",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "PA 8A",
+                        "name": "Blufi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 9",
+                        "name": "Bompietro",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 10",
+                        "name": "Alimena",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 11",
+                        "name": "Cefalù",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 12",
+                        "name": "Lascari",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 13",
+                        "name": "Campofelice di Roccella",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 14",
+                        "name": "Gratteri",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 15",
+                        "name": "Isnello",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 16",
+                        "name": "Collesano, Scillato",
+                        "data": [
+                            {
+                                "code": "PA 16",
+                                "name": "Collesano",
+                                "data": {}
+                            },
+                            {
+                                "code": "PA ?",
+                                "name": "Scillato",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "PA 17",
+                        "name": "Polizzi Generosa",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 18",
+                        "name": "Caltavuturo",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 19",
+                        "name": "Sclafani Bagni",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 20",
+                        "name": "Valledolmo",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 21",
+                        "name": "Cerda",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 22",
+                        "name": "Aliminusa",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 23",
+                        "name": "Montemaggiore Belsito",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 24",
+                        "name": "Alia",
                         "data": {}
                     }
                 ]
@@ -1734,7 +1882,159 @@
                 "data": [
                     {
                         "code": "PA 25",
-                        "name": "",
+                        "name": "Trabia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 26",
+                        "name": "Termini Imerese",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 27",
+                        "name": "Sciara",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 28",
+                        "name": "Caccamo",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 29",
+                        "name": "Ventimiglia di Sicilia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 30",
+                        "name": "Ciminna",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 31",
+                        "name": "Baucina",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 32",
+                        "name": "Villafrati",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 33",
+                        "name": "Cefalà Diana",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 34",
+                        "name": "Godrano",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 35",
+                        "name": "Santa Flavia",
+                        "data": [
+                            {
+                                "code": "PA 35a",
+                                "name": "Porticello",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "PA 36",
+                        "name": "Casteldaccia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 37",
+                        "name": "Altavilla Milicia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 38",
+                        "name": "Bagheria",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 39",
+                        "name": "Ficarazzi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 40",
+                        "name": "Villabate",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 41",
+                        "name": "Misilmeri",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 42",
+                        "name": "Bolognetta",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 43",
+                        "name": "Marineo",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 44",
+                        "name": "Belmonte Mezzagno",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 45",
+                        "name": "Palermo",
+                        "data": [
+                            {
+                                "code": "PA 45a",
+                                "name": "Mondello",
+                                "data": {}
+                            },
+                            {
+                                "code": "PA 45b",
+                                "name": "Tommaso Natale",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "PA 46",
+                        "name": "Isola delle Femmine",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 47",
+                        "name": "Capaci",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 48",
+                        "name": "Torretta",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 49",
+                        "name": "Monreale",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 50",
+                        "name": "Altofonte",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 51",
+                        "name": "Piana degli Albanesi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 52",
+                        "name": "Santa Cristina Gela",
                         "data": {}
                     }
                 ]
@@ -1745,7 +2045,77 @@
                 "data": [
                     {
                         "code": "PA 53",
-                        "name": "",
+                        "name": "Mezzojuso",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 53A",
+                        "name": "Campofelice di Fitalia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 54",
+                        "name": "Vicari",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 55",
+                        "name": "Roccapalumba",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 56",
+                        "name": "Lercara Friddi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 57",
+                        "name": "Castronovo di Sicilia",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 58",
+                        "name": "Prizzi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 59",
+                        "name": "Palazzo Adriano",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 60",
+                        "name": "Corleone",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 61",
+                        "name": "Roccamena",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 62",
+                        "name": "Campofiorito",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 63",
+                        "name": "Bisacquino",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 64",
+                        "name": "Chiusa Sclafani",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 65",
+                        "name": "Giuliana",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 66",
+                        "name": "Contessa Entellina",
                         "data": {}
                     }
                 ]
@@ -1756,7 +2126,67 @@
                 "data": [
                     {
                         "code": "PA 67",
-                        "name": "",
+                        "name": "Cinisi",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 68",
+                        "name": "Terrasini",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 69",
+                        "name": "Carini",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 70",
+                        "name": "Montelepre",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 71",
+                        "name": "Giardinello",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 72",
+                        "name": "Borgetto",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 73",
+                        "name": "Partinico",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 73A",
+                        "name": "Trappeto",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 74",
+                        "name": "Balestrate",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 75",
+                        "name": "San Giuseppe Jato",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 76",
+                        "name": "San Cipirello",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 77",
+                        "name": "Camporeale",
+                        "data": {}
+                    },
+                    {
+                        "code": "PA 78",
+                        "name": "Ustica",
                         "data": {}
                     }
                 ]
@@ -1768,9 +2198,105 @@
         "name": "dialetti ragusani",
         "data": [
             {
-                "code": "RG 1",
-                "name": "",
-                "data": {}
+                "code": "RG I",
+                "name": "dialetti ragusani",
+                "data": [
+                    {
+                        "code": "RG 1",
+                        "name": "Monterosso Almo",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 2",
+                        "name": "Giarratana",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 3",
+                        "name": "Chiaramonte Gulfi",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 4",
+                        "name": "Acate",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 5",
+                        "name": "Vittoria",
+                        "data": [
+                            {
+                                "code": "RG 5a",
+                                "name": "Scoglitti",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "RG 6",
+                        "name": "Comiso",
+                        "data": [
+                            {
+                                "code": "RG 6a",
+                                "name": "Pedalino",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "RG 7",
+                        "name": "Ragusa",
+                        "data": [
+                            {
+                                "code": "RG 7a",
+                                "name": "Marina di Ragusa",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "RG 8",
+                        "name": "Modica",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 9",
+                        "name": "Ispica",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 10",
+                        "name": "Pozzallo",
+                        "data": {}
+                    },
+                    {
+                        "code": "RG 11",
+                        "name": "Scicli",
+                        "data": [
+                            {
+                                "code": "RG 11a",
+                                "name": "Sampieri",
+                                "data": {}
+                            },
+                            {
+                                "code": "RG 11b",
+                                "name": "Donnalucata",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "RG 12",
+                        "name": "Santa Croce Camerina",
+                        "data": [
+                            {
+                                "code": "RG 12a",
+                                "name": "Punta Secca",
+                                "data": {}
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -1784,7 +2310,95 @@
                 "data": [
                     {
                         "code": "SR 1",
-                        "name": "",
+                        "name": "Lentini",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 2",
+                        "name": "Carlentini",
+                        "data": [
+                            {
+                                "code": "SR 2a",
+                                "name": "Pedagaggi",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "SR 3",
+                        "name": "Augusta",
+                        "data": [
+                            {
+                                "code": "SR 3a",
+                                "name": "Brucoli",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "SR 4",
+                        "name": "Francofonte",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 5",
+                        "name": "Melilli",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 6",
+                        "name": "Sortino",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 7",
+                        "name": "Buccheri",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 8",
+                        "name": "Ferla",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 9",
+                        "name": "Cassaro",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 10",
+                        "name": "Solarino",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 11",
+                        "name": "Floridia",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 12",
+                        "name": "Siracusa",
+                        "data": [
+                            {
+                                "code": "SR 12b",
+                                "name": "Belvedere",
+                                "data": {}
+                            },
+                            {
+                                "code": "SR 12c",
+                                "name": "Cassibile",
+                                "data": {}
+                            },
+                            {
+                                "code": "SR 12d",
+                                "name": "Ognina",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "SR 12a",
+                        "name": "Priolo Gargallo",
                         "data": {}
                     }
                 ]
@@ -1795,7 +2409,48 @@
                 "data": [
                     {
                         "code": "SR 13",
-                        "name": "",
+                        "name": "Buscemi",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 14",
+                        "name": "Palazzolo Acreide",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 15",
+                        "name": "Canicattini Bagni",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 16",
+                        "name": "Avola",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 17",
+                        "name": "Noto",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 18",
+                        "name": "Rosolini",
+                        "data": {}
+                    },
+                    {
+                        "code": "SR 19",
+                        "name": "Pachino",
+                        "data": [
+                            {
+                                "code": "SR 19a",
+                                "name": "Marzamemi",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "SR 20",
+                        "name": "Portopalo di Capo Passero",
                         "data": {}
                     }
                 ]
@@ -1812,7 +2467,117 @@
                 "data": [
                     {
                         "code": "TP 1",
-                        "name": "",
+                        "name": "Castellammare del Golfo",
+                        "data": [
+                            {
+                                "code": "TP 1a",
+                                "name": "Balata di Baida",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 2",
+                        "name": "Alcamo",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 3",
+                        "name": "Calatafimi-Segesta",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 4",
+                        "name": "Vita",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 5",
+                        "name": "Salemi",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 6",
+                        "name": "Gibellina",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 7",
+                        "name": "Poggioreale",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 8",
+                        "name": "Salaparuta",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 9",
+                        "name": "Santa Ninfa",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 10",
+                        "name": "Partanna",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 11",
+                        "name": "Castelvetrano",
+                        "data": [
+                            {
+                                "code": "TP 11a",
+                                "name": "Marinella",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 12",
+                        "name": "Campobello di Mazara",
+                        "data": {}
+                    }
+                ]
+            },
+            {
+                "code": "TP II",
+                "name": "dialetti trapanesi occidentali",
+                "data": [
+                    {
+                        "code": "TP 13",
+                        "name": "Custonaci",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 14",
+                        "name": "Erice",
+                        "data": [
+                            {
+                                "code": "TP 14a",
+                                "name": "Napola",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 14b",
+                                "name": "Ballata",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 14A",
+                        "name": "San Vito Lo Capo",
+                        "data": [
+                            {
+                                "code": "TP 14Aa",
+                                "name": "Castelluzzo",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 14B",
+                        "name": "Valderice",
                         "data": {}
                     },
                     {
@@ -1830,16 +2595,109 @@
                                 "data": {}
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                "code": "TP II",
-                "name": "dialetti trapanesi occidentali",
-                "data": [
+                    },
                     {
-                        "code": "TP 13",
-                        "name": "",
+                        "code": "TP ?",
+                        "name": "Trapani",
+                        "data": [
+                            {
+                                "code": "TP 15a",
+                                "name": "Ummari",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 15b",
+                                "name": "Fulgatore",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP ?",
+                        "name": "Misiliscemi",
+                        "data": [
+                            {
+                                "code": "TP 15c",
+                                "name": "Fontanasalsa (Misiliscemi)",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 15d",
+                                "name": "Marausa (Misiliscemi)",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 15e",
+                                "name": "Locogrande (Misiliscemi)",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 16",
+                        "name": "Buseto Palizzolo",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 17",
+                        "name": "Paceco",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 18",
+                        "name": "Marsala",
+                        "data": [
+                            {
+                                "code": "TP 18a",
+                                "name": "Birgi",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 18b",
+                                "name": "Santi Filippo e Giacomo",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 18c",
+                                "name": "Paolini",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 18d",
+                                "name": "Santo Padre delle Perriere",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 18A",
+                        "name": "Petrosino",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 19",
+                        "name": "Mazara del Vallo",
+                        "data": {}
+                    },
+                    {
+                        "code": "TP 20",
+                        "name": "Favignana",
+                        "data": [
+                            {
+                                "code": "TP 20a",
+                                "name": "Levanzo",
+                                "data": {}
+                            },
+                            {
+                                "code": "TP 20b",
+                                "name": "Marettimo",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    {
+                        "code": "TP 21",
+                        "name": "Pantelleria",
                         "data": {}
                     }
                 ]
