@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 generatedImage.src = uniqueUrl;
                 sessionStorage.setItem('imageUrl', imageUrl);
                 setTimeout(function() {
-                    // Run after the 'loading' class is removed (which takes too much time)
+                    // Run after the 'loading' class is removed (takes ~ 0.5 s)
                     formatSelection.style = ''; // show formatSelection
-                }, 10);
+                }, 500);
             } else {
                 console.error('Unexpected response format:', data);
             }
