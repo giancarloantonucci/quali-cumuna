@@ -1,4 +1,4 @@
 .DS_Store
 test.ipynb
-public/images/*.png
-public/images/*.svg
+public/output/*.png
+public/output/*.svg

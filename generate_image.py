@@ -10,9 +10,7 @@ from hashlib import md5
 
 # Parse input strings into manageable chunks
 def parse_input_string(input_string):
-    pattern = (
-        r"\b(?:AG|CL|CT|EN|ME|PA|RG|SR|TP)(?:(?:\s*,)?\s*[AIV0-9]+[a-z]*(?:-\d+)?)*\b"
-    )
+    pattern = (r"\b(?:AG|CL|CT|EN|ME|PA|RG|SR|TP)(?:(?:\s*,)?\s*[AIV0-9]+[a-z]*(?:-\d+)?)*\b")
     tokens = findall(pattern, input_string)
     result = []
     for token in tokens:
@@ -70,18 +68,14 @@ def lookup(code, all_codes):
                         #         if code == circuscrizziuni['code']:
                         #             return get_names(circuscrizziuni)
                         if not isinstance(circuscrizziuna, str):
-                            if any(
-                                code == circuscrizziuni["code"]
-                                for circuscrizziuni in circuscrizziuna
-                            ):
+                            if any(code == circuscrizziuni["code"] for circuscrizziuni in circuscrizziuna):
                                 return [cumuni["name"]]
     return []
 
 # Load data files
 riggiuni = read_file("./finaiti/riggiuni/riggiuni.shp")
 cumuna = read_file("./finaiti/cumuna/cumuna.shp")
-with open("./vs.json") as f:
-    all_codes = load(f)
+with open("./vs.json") as f: all_codes = load(f)
 
 # Collect user strings
 input_string1 = argv[1]
@@ -104,69 +98,24 @@ cumuna_epsg = cumuna.to_crs(epsg="3857")
 
 fig, ax = subplots(subplot_kw={"projection": crs_epsg}, figsize=(7, 7))
 ax.set_extent([11.8, 15.7, 38.9, 36.6])
-
-# Add geometries of riggiuni to the main axes
-ax.add_geometries(
-    riggiuni_epsg["geometry"],
-    crs=crs_epsg,
-    facecolor="white",
-    edgecolor="black",
-    linewidth=1,
-)
-
-# Add geometries of cumuna to the main axes
-im = ax.add_geometries(
-    cumuna_epsg["geometry"][selected_cumuna],
-    crs=crs_epsg,
-    facecolor="#2ECC71",
-    edgecolor="black",
-    linewidth=0.5,
-)
+ax.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=1)
+ax.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.5)
 
 # Create an inset axes for zoomed-in view of isuli Pilaggi
-axins = inset_axes(
-    ax,
-    width="60%",
-    height="60%",
-    loc="lower left",
-    bbox_to_anchor=(0.085, 0.01, 0.34, 0.34),
-    bbox_transform=ax.transAxes,
-    axes_class=GeoAxes,
-    axes_kwargs=dict(projection=crs_epsg),
-)
+axins = inset_axes(ax, width="60%", height="60%", loc="lower left", bbox_to_anchor=(0.085, 0.01, 0.34, 0.34), bbox_transform=ax.transAxes, axes_class=GeoAxes, axes_kwargs=dict(projection=crs_epsg))
 axins.set_extent([12.24, 12.96, 35.95, 35.4])
-
-axins.add_geometries(
-    riggiuni_epsg["geometry"],
-    crs=crs_epsg,
-    facecolor="white",
-    edgecolor="black",
-    linewidth=1,
-)
-
-axins.add_geometries(
-    cumuna_epsg["geometry"][selected_cumuna],
-    crs=crs_epsg,
-    facecolor="#2ECC71",
-    edgecolor="black",
-    linewidth=0.5,
-)
+axins.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=1)
+axins.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.5)
 
 # Generate filenames with unique identifier based on input parameters
 def generate_images(input_string1, input_string2, input_string3):
-    unique_id = md5(
-        (input_string1 + input_string2 + input_string3).encode()
-    ).hexdigest()
-    base_path = f"images/{unique_id}"
-    png_path = f"./public/images/{unique_id}.png"
-    svg_path = f"./public/images/{unique_id}.svg"
-
+    unique_id = md5((input_string1 + input_string2 + input_string3).encode()).hexdigest()
+    base_path = f"output/{unique_id}"
+    png_path = f"./public/output/{unique_id}.png"
+    svg_path = f"./public/output/{unique_id}.svg"
     return base_path, png_path, svg_path
 
-
-base_path, png_path, svg_path = generate_images(
-    input_string1, input_string2, input_string3
-)
+base_path, png_path, svg_path = generate_images(input_string1, input_string2, input_string3)
 
 # Save the figure as PNG and SVG files
 savefig(png_path, bbox_inches="tight")

@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 4000;
 const cache = new NodeCache({ stdTTL: 600 });
 
 const publicDirectoryPath = path.join(__dirname, 'public');
-const imageDirectoryPath = path.join(publicDirectoryPath, 'images');
 
 let pngImagePath;
 let svgImagePath;
