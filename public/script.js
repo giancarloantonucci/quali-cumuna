@@ -29,8 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 const uniqueUrl = imageUrl + '?timestamp=' + new Date().getTime();
                 generatedImage.classList.remove('loading');
                 generatedImage.src = uniqueUrl;
-                formatSelection.style = ''; // show formatSelection
                 sessionStorage.setItem('imageUrl', imageUrl);
+                setTimeout(function() {
+                    // Run after the 'loading' class is removed (which takes too much time)
+                    formatSelection.style = ''; // show formatSelection
+                }, 10);
             } else {
                 console.error('Unexpected response format:', data);
             }
