@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Unni si dici?</title>
+    <title>Quali cumuna? - Pàggina mastra</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Unni si dici?</h1>
+            <h1>Quali cumuna?</h1>
         </header>
+        <p>
+            <a href="./guida.html">Guida a l'usu</a>
+        </p>
         <form id="imageForm" action="/generate_image" method="POST">
-            <input type="text" id="inputString1" name="inputString1" placeholder="AG I, 1, 2a, 3-4">
+            <input type="text" id="inputString1" name="inputString1" placeholder="AG I, 13, 22a, CT 5-7">
             <br>
             <input type="text" id="inputString2" name="inputString2" placeholder="Capo d'Orlando, Messina">
             <br>
@@ -38,7 +41,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Giancarlo A. Antonucci</p>
+        <p id="copyrightInfo">
+            &copy; 2024 Giancarlo A. Antonucci
+        </p>
     </footer>
 
     <script src="script.js"></script>

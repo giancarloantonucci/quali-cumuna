@@ -12,6 +12,17 @@ html {
 
 .container {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 100%;
 }
 
 #imageForm input[type="text"] {
@@ -29,12 +40,71 @@ html {
     margin-bottom: 20px;
 }
 
-footer {
+.guide {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.guide section {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.guide h1, h2 {
+    text-align: center;
+}
+
+.guide ol, ul {
+    padding-left: 60px;
+}
+
+.guide img {
+    width: 100%;
+}
+
+footer #copyrightInfo {
     position: fixed;
     bottom: 0;
     right: 0;
     padding: 5px 20px;
     font-size: 14px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+footer #backHome {
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .guide {
+        max-width: 90%;
+    }
+
+    .guide ol, ul {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .guide {
+        max-width: 80%;
+    }
+
+    .guide ol, ul {
+        padding-left: 40px;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap')
