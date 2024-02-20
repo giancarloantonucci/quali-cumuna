@@ -25,6 +25,8 @@ html {
     width: 100%;
 }
 
+/* input fields */
+
 #imageForm input[type="text"] {
     margin-bottom: 5px;
 }
@@ -32,6 +34,18 @@ html {
 #imageForm button[type="submit"] {
     margin: 15px 0;
 }
+
+/* image */
+
+#generatedImage.loading {
+    position: fixed;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* download */
 
 #formatSelection {
     display: flex;
