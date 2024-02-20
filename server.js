@@ -10,9 +10,6 @@ const cache = new NodeCache({ stdTTL: 600 });
 
 const publicDirectoryPath = path.join(__dirname, 'public');
 
-let pngImagePath;
-let svgImagePath;
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
@@ -44,9 +41,6 @@ app.post('/generate_image', (req, res) => {
             .then(result => {
                 const baseImagePath = result[0].trim();
                 const imagePath = baseImagePath + '.png';
-
-                pngImagePath = './public/' + baseImagePath + '.png';
-                svgImagePath = './public/' + baseImagePath + '.svg';
                 
                 cache.set(cacheKey, imagePath);
                 res.json({ imageUrl: imagePath });
@@ -56,14 +50,6 @@ app.post('/generate_image', (req, res) => {
         console.error('Error generating image:', error);
         res.status(500).json({ error: 'Internal server error' });
     }
-});
-
-app.post('/download_png', (req, res) => {
-    res.download(pngImagePath);
-});
-
-app.post('/download_svg', (req, res) => {
-    res.download(svgImagePath);
 });
 
 app.listen(PORT, () => {

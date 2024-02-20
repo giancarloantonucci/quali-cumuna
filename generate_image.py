@@ -121,4 +121,5 @@ base_path, png_path, svg_path = generate_images(input_string1, input_string2, in
 savefig(png_path, bbox_inches="tight")
 savefig(svg_path, bbox_inches="tight")
 
+# String for server.js
 print(base_path)
