@@ -104,8 +104,8 @@ ax.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, faceco
 # Create an inset axes for zoomed-in view of isuli Pilaggi
 axins = inset_axes(ax, width="60%", height="60%", loc="lower left", bbox_to_anchor=(0.085, 0.01, 0.34, 0.34), bbox_transform=ax.transAxes, axes_class=GeoAxes, axes_kwargs=dict(projection=crs_epsg))
 axins.set_extent([12.24, 12.96, 35.95, 35.4])
-axins.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=1)
-axins.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.5)
+axins.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=0.5)
+axins.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.1)
 
 # Generate filenames with unique identifier based on input parameters
 def generate_images(input_string1, input_string2, input_string3):
@@ -118,7 +118,7 @@ def generate_images(input_string1, input_string2, input_string3):
 base_path, png_path, svg_path = generate_images(input_string1, input_string2, input_string3)
 
 # Save the figure as PNG and SVG files
-savefig(png_path, bbox_inches="tight")
+savefig(png_path, bbox_inches="tight", dpi=150)
 savefig(svg_path, bbox_inches="tight")
 
 # String for server.js
