@@ -87,8 +87,37 @@ codes = parse_input_string(input_string1)
 from itertools import chain
 
 names_ita = set(chain.from_iterable(lookup(code, all_codes) for code in codes))
-names_ita.update(name.strip() for name in input_string2.split(","))
+
+def filter_spelling(spelling):
+    official_spellings = [
+        "Joppolo Giancaxio",
+        "San Giuseppe Jato",
+        "Mezzojuso",
+        "Raccuja",
+        "Moio Alcantara",
+        "Letojanni",
+        "Castel di Iudica",
+    ]
+    possible_spellings = [
+        "Ioppolo Giancaxio",
+        "San Giuseppe Iato",
+        "Mezzoiuso",
+        "Raccuia",
+        "Mojo Alcantara",
+        "Letoianni",
+        "Castel di Judica",
+    ]
+    if spelling in possible_spellings:
+        index = possible_spellings.index(spelling)
+        corrected_spelling = official_spellings[index]
+        return corrected_spelling
+    else:
+        return spelling
+
+names_ita.update(filter_spelling(name.strip()) for name in input_string2.split(","))
+
 names_scn = {name.strip() for name in input_string3.split(",")}
+
 selected_cumuna = cumuna["ITA"].isin(names_ita) | cumuna["SCN"].isin(names_scn)
 
 # Plotting
