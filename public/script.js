@@ -1,16 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => { // (DOM = Document Object Model, a programming interface for web documents)
+    // Get references to index.html elements to change
     const generatedImage = document.getElementById('generatedImage');
     const formatSelection = document.getElementById('formatSelection');
 
-    document.getElementById('imageForm').addEventListener('submit', function (event) {
+    // Handle image generation
+    document.getElementById('imageForm').addEventListener('submit', event => {
         event.preventDefault();
-        
+        // Extract input strings from form fields
         const inputStrings = Array.from(document.querySelectorAll('#imageForm input')).map(input => input.value);
-
+        // Display loading state
         generatedImage.classList.add('loading');
         generatedImage.src = 'loader.gif';
-        formatSelection.style = "display: none;" // hide formatSelection
-
+        formatSelection.style = "display: none;" // Hide formatSelection
+        // Send request to server to generate an image based on input strings
         fetch('/generate_image', {
             method: 'POST',
             headers: {
@@ -30,10 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 generatedImage.classList.remove('loading');
                 generatedImage.src = uniqueUrl;
                 sessionStorage.setItem('imageUrl', imageUrl);
-                setTimeout(function() {
-                    // Run after the 'loading' class is removed (takes ~ 150 ms)
-                    formatSelection.style = ''; // show formatSelection
-                }, 150);
+                // Show formatSelection after removing 'loading' class (takes ~ 150 ms)
+                setTimeout(() => { formatSelection.style = ''; }, 150);
             } else {
                 console.error('Unexpected response format:', data);
             }
@@ -49,18 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (!response.ok) {
                     throw new Error('Failed to download PNG file');
                 }
-                return response.blob();
+                return response.blob(); // Parse as Blob (= Binary Large Object, type for binary data in web browsers)
             })
             .then(blob => {
                 // Create a temporary link to download the file
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'mmàggini.png';
+                a.download = 'mmàggini.png'; // Set name of downloaded file
                 document.body.appendChild(a);
-                a.click();
-                window.URL.revokeObjectURL(url);
-                document.body.removeChild(a);
+                a.click(); // Simulate click on the link to initiate download
+                window.URL.revokeObjectURL(url);  // Release the object URL
+                document.body.removeChild(a); // Delete the temporary link
             })
             .catch(error => console.error('Error:', error));
         } else {
@@ -71,23 +71,23 @@ document.addEventListener("DOMContentLoaded", function () {
     function downloadSVG() {
         const storedImageUrl = sessionStorage.getItem('imageUrl');
         if (storedImageUrl) {
-            fetch(storedImageUrl.replace(".png", ".svg"))
+            fetch(storedImageUrl.replace(".png", ".svg")) // Extension is set to .png by default
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to download SVG file');
                 }
-                return response.blob();
+                return response.blob(); // Parse as Blob (= Binary Large Object, type for binary data in web browsers)
             })
             .then(blob => {
                 // Create a temporary link to download the file
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'mmàggini.svg';
+                a.download = 'mmàggini.svg'; // Set name of downloaded file
                 document.body.appendChild(a);
-                a.click();
-                window.URL.revokeObjectURL(url);
-                document.body.removeChild(a);
+                a.click(); // Simulate click on the link to initiate download
+                window.URL.revokeObjectURL(url);  // Release the object URL
+                document.body.removeChild(a); // Delete the temporary link
             })
             .catch(error => console.error('Error:', error));
         } else {
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Attach event listeners to download buttons
     document.getElementById('downloadPNGButton').addEventListener('click', downloadPNG);
     document.getElementById('downloadSVGButton').addEventListener('click', downloadSVG);
-
 });
