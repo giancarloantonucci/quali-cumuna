@@ -7,8 +7,17 @@ from cartopy.mpl.geoaxes import GeoAxes
 from matplotlib.pyplot import subplots, savefig
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from hashlib import md5
+from itertools import chain
 
-# Parse input strings into manageable chunks
+################################## LOAD DATA ##################################
+
+riggiuni = read_file("./finaiti/riggiuni/riggiuni.shp")
+cumuna = read_file("./finaiti/cumuna/cumuna.shp")
+with open("./vs.json") as f: all_codes = load(f)
+
+################################ PROCESS DATA ################################
+
+# Parse input strings into chunks
 def parse_input_string(input_string):
     pattern = (r"\b(?:AG|CL|CT|EN|ME|PA|RG|SR|TP)(?:(?:\s*,)?\s*[AIV0-9]+[a-z]*(?:-\d+)?)*\b")
     tokens = findall(pattern, input_string)
@@ -41,10 +50,10 @@ def extract_names_recursive(key, dictionary):
                     for result in extract_names_recursive(key, d):
                         yield result
 
+# Find all names associated with a given code
 def get_names(dictionary):
     return list(extract_names_recursive("name", dictionary))
 
-# Find all names associated with a given code
 def lookup(code, all_codes):
     header = code.split(" ")[0]
     for province in all_codes:
@@ -72,22 +81,7 @@ def lookup(code, all_codes):
                                 return [cumuni["name"]]
     return []
 
-# Load data files
-riggiuni = read_file("./finaiti/riggiuni/riggiuni.shp")
-cumuna = read_file("./finaiti/cumuna/cumuna.shp")
-with open("./vs.json") as f: all_codes = load(f)
-
-# Collect user strings
-input_string1 = argv[1]
-input_string2 = argv[2]
-input_string3 = argv[3]
-
-# Process strings
-codes = parse_input_string(input_string1)
-from itertools import chain
-
-names_ita = set(chain.from_iterable(lookup(code, all_codes) for code in codes))
-
+# Filter spelling for some specific cases
 def filter_spelling(spelling):
     official_spellings = [
         "Joppolo Giancaxio",
@@ -114,13 +108,26 @@ def filter_spelling(spelling):
     else:
         return spelling
 
+# Get user strings
+input_string1 = argv[1]
+input_string2 = argv[2]
+input_string3 = argv[3]
+
+# Get Italian names from 1st input string
+codes = parse_input_string(input_string1)
+names_ita = set(chain.from_iterable(lookup(code, all_codes) for code in codes))
+
+# Get Italian names from 2nd input string
 names_ita.update(filter_spelling(name.strip()) for name in input_string2.split(","))
 
+# Get Sicilian names from 3rd input string
 names_scn = {name.strip() for name in input_string3.split(",")}
 
-selected_cumuna = cumuna["ITA"].isin(names_ita) | cumuna["SCN"].isin(names_scn)
+# Filter cumuna based on all names
+chosen_cumuna = cumuna["ITA"].isin(names_ita) | cumuna["SCN"].isin(names_scn)
 
-# Plotting
+################################### PLOTTING ##################################
+
 crs_epsg = ccrs.epsg("3857")
 riggiuni_epsg = riggiuni.to_crs(epsg="3857")
 cumuna_epsg = cumuna.to_crs(epsg="3857")
@@ -128,27 +135,23 @@ cumuna_epsg = cumuna.to_crs(epsg="3857")
 fig, ax = subplots(subplot_kw={"projection": crs_epsg}, figsize=(7, 7))
 ax.set_extent([11.8, 15.7, 38.9, 36.6])
 ax.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=1)
-ax.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.5)
+ax.add_geometries(cumuna_epsg["geometry"][chosen_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.5)
 
 # Create an inset axes for zoomed-in view of isuli Pilaggi
 axins = inset_axes(ax, width="60%", height="60%", loc="lower left", bbox_to_anchor=(0.085, 0.01, 0.34, 0.34), bbox_transform=ax.transAxes, axes_class=GeoAxes, axes_kwargs=dict(projection=crs_epsg))
 axins.set_extent([12.24, 12.96, 35.95, 35.4])
 axins.add_geometries(riggiuni_epsg["geometry"], crs=crs_epsg, facecolor="white", edgecolor="black", linewidth=0.5)
-axins.add_geometries(cumuna_epsg["geometry"][selected_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.1)
+axins.add_geometries(cumuna_epsg["geometry"][chosen_cumuna], crs=crs_epsg, facecolor="#2ECC71", edgecolor="black", linewidth=0.1)
 
-# Generate filenames with unique identifier based on input parameters
-def generate_images(input_string1, input_string2, input_string3):
-    unique_id = md5((input_string1 + input_string2 + input_string3).encode()).hexdigest()
-    base_path = f"output/{unique_id}"
-    png_path = f"./public/output/{unique_id}.png"
-    svg_path = f"./public/output/{unique_id}.svg"
-    return base_path, png_path, svg_path
+# Make filenames with unique identifier based on input strings
+unique_id = md5((input_string1 + input_string2 + input_string3).encode()).hexdigest()
+base_path = f"output/{unique_id}"
+png_path = f"./public/output/{unique_id}.png"
+svg_path = f"./public/output/{unique_id}.svg"
 
-base_path, png_path, svg_path = generate_images(input_string1, input_string2, input_string3)
-
-# Save the figure as PNG and SVG files
+# Save as PNG and SVG files
 savefig(png_path, bbox_inches="tight", dpi=150)
 savefig(svg_path, bbox_inches="tight")
 
-# String for server.js
+# Return base path to server.js
 print(base_path)
